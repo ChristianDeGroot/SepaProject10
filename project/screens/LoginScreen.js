@@ -21,6 +21,10 @@ const LoginScreen = ({navigation}) => {
     }
   };
 
+  const gotoMap = () => {
+    navigation.navigate('Map')
+  };
+
 
   return (
     //View is like div, styles.container is the css it is using
@@ -45,6 +49,7 @@ const LoginScreen = ({navigation}) => {
           onChangeText={setPassword}
         />
         <Button title="Login" onPress={handleLogin} />
+        <Button title="MapTest" onPress={gotoMap} />
        
       </View>
     </View>
